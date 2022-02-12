@@ -10,33 +10,17 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Linked List Operations \n");
-            LinkedList list = new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-
-            /*list.AddInReverseOrder(70);
-            list.AddInReverseOrder(30);
-            list.AddInReverseOrder(56);*/
-
-             list.DeleteFirstNode(56);
-
-              list.DeleteLastNode(70);
-
-            int pos = list.Search(50);
-            if(pos == -1)
-            {
-                Console.WriteLine("Element is not Present in the List");
-            }
-            else
-            {
-                Console.WriteLine(pos);
-            }
-            list.DeleteNodeAtParticularPosition(pos);
+            Console.WriteLine("Welcome to Stack Operations \n");
+            LinkedListStack list = new LinkedListStack();
+            list.Push(70);
+            list.Push(30);
+            list.Push(56);
             list.Display();
-            list.Size();
-            Console.ReadKey();
+            /*list.Peek();
+            list.Pop();*/
+             list.IsEmpty();
+            list.Display();
+                   
         }
     }
 }
