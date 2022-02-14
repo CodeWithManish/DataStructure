@@ -10,16 +10,15 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Stack Operations \n");
-            LinkedListStack list = new LinkedListStack();
-            list.Push(70);
-            list.Push(30);
-            list.Push(56);
+            Console.WriteLine("Welcome to Queue Operations \n");
+            LinkedListQueue list = new LinkedListQueue();
+            list.Enqueue(70);
+            list.Enqueue(30);
+            list.Enqueue(56);
             list.Display();
-            /*list.Peek();
-            list.Pop();*/
-             list.IsEmpty();
+            list.Dequeue();
             list.Display();
+            
                    
         }
     }
